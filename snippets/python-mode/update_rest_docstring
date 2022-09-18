@@ -3,7 +3,7 @@
 # name: Python reST Docstring solo
 # key: dsr
 # type: command
-# group: radical
+# group: py-snippets
 # condition: 'force-in-comment
 # contributor: Gustaf Waldemarson
 # --
@@ -22,9 +22,9 @@
        (concat
         (when (not in-docstring)
           (concat "\"\"\"" indent))
-        (yasnippet-radical-snippets--python-args-to-reST-docstring string nil)
+        (py-snippets--python-args-to-reST-docstring string nil)
         indent
-        (yasnippet-radical-snippets--python-types-to-reST-docstring string nil)
+        (py-snippets--python-types-to-reST-docstring string nil)
         (when (not (string= "" string))
           indent)
         ".. Returns:"

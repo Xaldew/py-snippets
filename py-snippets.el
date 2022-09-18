@@ -1,4 +1,4 @@
-;;; yasnippet-radical-snippets.el --- Collection of radical yasnippet snippets
+;;; py-snippets.el --- Collection of advanced Python yasnippet snippets
 
 ;; Copyright (C) 2021 Gustaf Waldemarson
 
@@ -6,12 +6,12 @@
 ;; Version: 0.1
 ;; Package-Requires: ((yasnippet "0.8.0"))
 ;; Keywords: convenience, snippets
-;; Homepage: https://github.com/Xaldew/yasnippet-radical-snippets
+;; Homepage: https://github.com/Xaldew/py-snippets
 
 ;;; Commentary:
 
-;; This repository contains a small collection of *radical* snippets for the
-;; yasnippet package.
+;; This repository contains a small collection of advanced Python snippets for
+;; the yasnippet package.
 
 ;;; License:
 
@@ -33,7 +33,7 @@
 (require 'yasnippet)
 
 
-(defconst yasnippet-radical-snippets-dir
+(defconst py-snippets-dir
   (expand-file-name
    "snippets"
    (file-name-directory
@@ -46,16 +46,16 @@
 
 
 ;;;###autoload
-(defun yasnippet-radical-snippets-initialize ()
+(defun py-snippets-initialize ()
   "Load the `yasnippet-snippets' snippets directory."
-  ;; NOTE: we add the symbol `yasnippet-radical-snippets-dir' rather than its
+  ;; NOTE: we add the symbol `py-snippets-dir' rather than its
   ;; value, so that yasnippet will automatically find the directory
   ;; after this package is updated (i.e., moves directory).
-  (add-to-list 'yas-snippet-dirs 'yasnippet-radical-snippets-dir t)
-  (yas-load-directory yasnippet-radical-snippets-dir t))
+  (add-to-list 'yas-snippet-dirs 'py-snippets-dir t)
+  (yas-load-directory py-snippets-dir t))
 
 
-(defgroup yasnippet-radical-snippets nil
+(defgroup py-snippets nil
   "Options for yasnippet setups.
 
 This is useful for customizing options declared in
@@ -64,6 +64,6 @@ customizable variable used for a snippet expansion.  See Info
 node `(elisp)Customization Types'."
   :group 'yasnippet)
 
-(provide 'yasnippet-radical-snippets)
+(provide 'py-snippets)
 
-;;; yasnippet-radical-snippets.el ends here
+;;; py-snippets.el ends here

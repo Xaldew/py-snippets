@@ -3,12 +3,12 @@
 # name: Python Google style Docstring
 # key: defg
 # type: snippet
-# group: radical
+# group: py-snippets
 # contributor: Gustaf Waldemarson
 # --
 def ${1:name}($2):
     \"\"\"$3
-    ${2:$(yasnippet-radical-snippets--python-args-to-google-docstring yas-text t)}
+    ${2:$(py-snippets--python-args-to-google-docstring yas-text t)}
     ${5:Returns:
         $6
 }

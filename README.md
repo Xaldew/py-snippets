@@ -1,6 +1,6 @@
-# The Radical Yasnippet Collection
+# The Advanced Python Yasnippet Collection
 
-This repository contains a small collection of *radical* snippets for
+This repository contains a small collection of advanced Python snippets for
 [yasnippet](https://github.com/joaotavora/yasnippet).
 
 
@@ -10,8 +10,7 @@ As this collection has only just been created, for the time being this
 collection is not available on [MELPA](https://melpa.org/). In the meantime, you
 may install it directly from my [personal
 archive](https://gustafwaldemarson.com/elpa/). This can be done by adding the
-following snippet to your `emacs`.
-
+following snippet to your Emacs configuration:
 
 ```emacs-lisp
 (require 'package)
@@ -32,19 +31,19 @@ Alternatively, you can also install the package using e.g.
 snippet in your `.emacs`:
 
 ```
-(use-package yasnippet-radical-snippets
+(use-package py-snippets
   :ensure t
   :after yasnippet
   :config
-  (yasnippet-radical-snippets-initialize))
+  (py-snippets-initialize))
 ```
 
-For doom emacs:
+For Doom Emacs:
 
 ```elisp
-(package! yasnippet-radical-snippets
-  :recipe (:host github :repo "Xaldew/yasnippet-radical-snippets"
-           :files (:defaults "snippets" "yasnippet-radical-snippets.el")))
+(package! py-snippets
+  :recipe (:host github :repo "Xaldew/py-snippets"
+           :files (:defaults "snippets" "py-snippets.el")))
 ```
 
 # Examples
@@ -74,16 +73,6 @@ Requested, but not implemented yet.
 
 ![Python Class Documentation](./img/class_rest.gif)
 
-## C/C++
-
-### Documented Function - Doxygen Style
-
-This snippet attempts to grab type-information using the
-[Semantic](https://www.gnu.org/software/emacs/manual/html_node/emacs/Semantic.html)
-backend, falling back to regexp based extraction should it fail or not be
-available.
-
-![C++ Function Doxygen](./img/cxx_fn_doxygen.gif)
 
 # Contributing
 
@@ -92,4 +81,4 @@ general collection, feel free to create an issue or pull-request to discuss it.
 
 If you have found a bug in any of the available snippets and want to report it,
 please provide a minimal example that can reproduce it; these snippets are often
-a bit difficult to debug so please make it as easy as possible for us.
+a bit difficult to debug, so please make it as easy as possible for us to do so.
